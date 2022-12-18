@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "250d1bad-3b2c-46ab-b517-e6e7ca6f0696",
+		"name": "Credit Card Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4466396"
+	},
+	"item": [
+		{
+			"name": "Add Card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"John Doe\",\n    \"cardNumber\": \"5574130084175298\",\n    \"limit\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/v1/card",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/v1/cards",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"cards"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
